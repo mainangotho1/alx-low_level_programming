@@ -3,16 +3,21 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Succes)
+ *
+ * Return: Always 0 (Sucess)
  */
 
 int main(void)
 {
-	int n;
+	char c;
 
-	for (n = 0 ; n < 10 ; n++)
+	for (c = 'a' ; c <= 'z' ; c++)
 	{
-		printf("%d", n);
+		if ((c == 'q' || c == 'e') != 1)
+		{
+			putchar(c);
+		}
+
 	}
 	putchar('\n');
 	return (0);
